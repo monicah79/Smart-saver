@@ -1,0 +1,30 @@
+<nav class="header">
+
+<h2>SMART SAVER</h2>
+<div>
+    <p> ADDED CATEGORY </p>
+  </div>
+  <div>
+    <%= link_to "Back", categories_path, class: "back" %>
+  </div>
+
+</nav>
+
+<div class="container">
+<%= render @category %>
+
+<div class="edit-delete">
+<div>
+  <%= link_to "Edit category", edit_category_path(@category) %>
+  </div>
+  <%= link_to "Delete category", @category, method: :delete %>
+</div>
+
+</div>
+
+
+<footer>
+<div class="actions">
+ <%= link_to "Back to categories", categories_path %>
+ </div>
+ </footer>

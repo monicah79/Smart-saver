@@ -1,0 +1,49 @@
+<main class="main-style">
+
+<nav class="header">
+<div>
+<span class="fa fa-bars"></span>
+</div>
+  <div>
+    <p> TRANSACTIONS </p>
+  </div>
+
+  <div>
+    <%= link_to "Back", root_path, class: "back" %>
+  </div>
+  
+  
+</nav>
+
+<div class="flex justify-between w-full shadow text-xl px-5 py-3">
+	<p>Credit</p>
+	<small class="font-bold text-xl">
+	  <% credit = 0 %>
+	  <% @categories.each do |category| %>
+	  <% category.transactions.each do |transaction| %>
+		<% credit += transaction.amount %>
+	  <% end %>
+	  <% end %>
+	  <%= "$#{credit}" %>
+	</small>
+</div>
+
+<div class="container">
+  <div id="categories">
+    <% if @categories.empty? %>
+      <div class="message">There are no categories to display. Add one.</div>
+    <% else %>
+      <% @categories.each do |category| %>
+        <%= render category %>
+      <% end %>
+    <% end %>
+  </div>
+  </div>
+
+
+  <footer>
+  <div class="actions">
+  <%= link_to "New category", new_category_path, class: "new-cate" %>
+  </div>
+  </footer>
+</main>
