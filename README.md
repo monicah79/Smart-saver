@@ -123,7 +123,7 @@ rails server
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/monicah79/Budget-App/issues).
+Feel free to check the [issues page](https://github.com/monicah79/Smart-saver/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
