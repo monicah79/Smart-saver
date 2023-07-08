@@ -1,0 +1,19 @@
+
+
+<nav class="header">
+<h2>SMART SAVER</h2>
+  <div>
+    <p> NEW CATEGORY </p>
+  </div>
+  <div>
+    <%= link_to "Back", categories_path, class: "back" %>
+  </div>
+</nav>
+
+<div class="input-group">
+  <%= link_to categories_path, class: "back-link" do %>
+    <i class="bi bi-arrow-left"></i>
+  <% end %>
+    <i class="bi bi-list"></i>
+</div>
+<%= render "form", category: @category %>

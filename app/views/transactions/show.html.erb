@@ -1,0 +1,31 @@
+<nav class="header">
+
+   <h2>SMART SAVER</h2>
+  <div>
+    <p> SHOW</p>
+  </div>
+  <div>
+    <%= link_to "Back", new_category_path, class: "back" %>
+  </div>
+
+</nav>
+
+<p style="color: green"><%= notice %></p>
+
+<div class="container">
+<%= render @transaction %>
+</div>
+
+<div class="edit-delete">
+<div> 
+  <%= link_to "Edit transaction", edit_transaction_path(@transaction) %>
+  </div>
+
+  <%= link_to "Delete transaction", @transaction, method: :delete %>
+</div>
+
+<footer>
+<div class="actions">
+<%= link_to "Back to transactions", transactions_path %>
+</div>
+</footer>

@@ -1,0 +1,14 @@
+development:
+  database: Smart_saver
+  username: monnie
+  password: monnie
+  adapter: postgresql
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: Smart_save tests
+  pool: 5
+  username: monnie
+  password: monnie
+  port: 5432

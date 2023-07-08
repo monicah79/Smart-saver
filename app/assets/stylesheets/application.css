@@ -1,0 +1,61 @@
+img {
+  width: 50%;
+}
+
+.container {
+  margin-top: 5%;
+  overflow: hidden;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+}
+
+.icon {
+  object-fit: contain;
+  width: 50%;
+}
+
+.actions {
+  background: #5fb523;
+  text-align: center;
+  padding: 20px;
+}
+
+.actions a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}
+
+.splash {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  height: 80vh;
+  top: 0;
+  padding: 50px;
+}
+
+.splash h2 {
+  font-style: italic;
+}
+
+.btn-1 {
+  background: blue;
+  margin-top: 20%;
+  color: #fff;
+  font-size: 24px;
+}
+
+.form-input {
+  padding: 20px;
+  width: 80%;
+  border: 1px solid lightgray;
+}

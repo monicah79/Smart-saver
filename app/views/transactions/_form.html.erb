@@ -1,0 +1,39 @@
+
+<%= form_with(model: transaction) do |form| %>
+
+  <% if transaction.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(transaction.errors.count, "error") %> prohibited this transaction from being saved:</h2>
+
+      <ul>
+        <% transaction.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="sign-color container">
+    <div class="field form-div">
+      <% form.label :name, id: "Name", style: "display: block" %>
+      <%= form.text_field :name, placeholder: "Name", class: "form-input" %>
+    </div>
+
+    <div class="field form-div">
+      <%= form.label :amount, id: "Amount", style: "display: block" %>
+      <%= form.text_field :amount, type: :number, class: "form-input" %>
+    </div>
+
+    <div class="field form-div">
+      <%= form.select :category_id, options_for_select([['Select a category', '']] + Category.all.map { |c| [c.name, c.id] }), {}, { class: "form-input" } %>
+    </div>
+  </div>
+
+    <footer>
+    <div class="actions">
+      <%= form.submit "Save", class: "save-btn" %>
+    </div>
+  </footer>
+  
+<% end %>
+

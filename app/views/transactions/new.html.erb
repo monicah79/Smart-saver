@@ -1,0 +1,20 @@
+<nav class="header">
+
+   <h2>SMART SAVER</h2>
+  <div>
+    <p> NEW TRANSACTION </p>
+  </div>
+  <div>
+    <%= link_to "Back", new_transaction_path, class: "back" %>
+  </div>
+
+</nav>
+
+
+<div class="new-head">
+  <%= link_to transactions_path(category_id: 1), class: "back-link" do %>
+    <i class="bi bi-arrow-left"></i>
+  <% end %>
+</div>
+
+<%= render "form", transaction: @transaction %>

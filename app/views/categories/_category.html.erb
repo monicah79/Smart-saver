@@ -1,0 +1,20 @@
+<div id="<%= dom_id category %>">
+  <%= link_to transactions_path(category_id: category.id), class: "card-link" do %>
+    <div class="card">
+
+    <div class="icon">
+      <%= image_tag(category.icon) %>
+      </div>
+    
+      <div class="text-center">
+      <h6 class="text-muted"><%= category.name %></h6>
+      </div>
+
+      <div class="amount">
+       <p>$ <%= number_with_precision(category.transactions.sum(:amount), precision: 2, delimiter: ',') %></p>
+     </div>
+     
+    </div>
+  <% end %>
+  
+</div>
