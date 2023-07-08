@@ -1,20 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
 development:
-<<: *default
+  <<: *default
   database: Smart_saver
   username: monnie
   password: monnie
-  adapter: postgresql
 
 test:
-<<: *default
-  adapter: postgresql
-  encoding: unicode
-  database: Smart_save tests
-  pool: 5
+  <<: *default
+  database: Smart_save_tests
   username: monnie
   password: monnie
-  port: 5432
 
-  production:
+production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
