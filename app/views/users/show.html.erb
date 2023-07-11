@@ -2,9 +2,9 @@
 
 <%= render @user %>
 
-<div>
-  <%= link_to "Edit this user", edit_user_path(@user) %> |
-  <%= link_to "Back to users", users_path %>
+<div class="d-flex flex-column">
+  <%= link_to "Edit this user", edit_user_registration_path %> |
+  <%= link_to "Back to users", user_path %>
 
   <%= button_to "Destroy this user", @user, method: :delete %>
 </div>

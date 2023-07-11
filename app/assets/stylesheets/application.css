@@ -1,9 +1,30 @@
+/* .fa-bars::before {
+  content: "\f0c9";
+  font-family: FontAwesome, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  margin-right: 5px;
+}
+
+.sign-out {
+  color: #000;
+  padding: 0.8rem 0.8rem;
+  font-size: 0.7rem;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.next {
+  color: #fff;
+}
+
 img {
   width: 50%;
 }
 
 .container {
-  margin-top: 5%;
+  margin-top: 3%;
   overflow: hidden;
 }
 
@@ -57,5 +78,6 @@ img {
 .form-input {
   padding: 20px;
   width: 80%;
-  border: 1px solid lightgray;
-}
+  border: 1px solid red;
+  border-radius: 8px;
+} */

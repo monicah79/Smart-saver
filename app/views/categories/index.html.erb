@@ -1,22 +1,25 @@
+<nav class="bg-primary text-white d-flex justify-content-between p-4 mt-0  text-center">
+      <div>
+      <%= link_to user_path(current_user) do %>
+        <i class="fa fa-user text-white fs-4" aria-hidden="true"></i> 
+      <% end %>
+      </div>
+
+      <div>
+        <p class: "text-white fs-3 fw-bold "> CATEGORY </p>
+      </div>
+     
+      <div>
+       <%= link_to root_path, class: "text-white fs-4 " do %>
+        <i class="fa fa-search" aria-hidden="true"></i>
+      <% end %>
+     </div>
+  </nav>
 <main class="main-style">
 
-<nav class="header">
-<div>
-<span class="fa fa-bars"></span>
-</div>
-  <div>
-    <p> TRANSACTIONS </p>
-  </div>
 
-  <div>
-    <%= link_to "Back", root_path, class: "back" %>
-  </div>
-  
-  
-</nav>
-
-<div class="flex justify-between w-full shadow text-xl px-5 py-3">
-	<p>Credit</p>
+<div class="d-flex justify-content-between w-full shadow text-xl px-5 py-3">
+	<p>Total Spendings</p>
 	<small class="font-bold text-xl">
 	  <% credit = 0 %>
 	  <% @categories.each do |category| %>

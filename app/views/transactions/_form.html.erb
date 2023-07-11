@@ -14,17 +14,17 @@
   <% end %>
 
   <div class="sign-color container">
-    <div class="field form-div">
+    <div class="field form-div m-3">
       <% form.label :name, id: "Name", style: "display: block" %>
       <%= form.text_field :name, placeholder: "Name", class: "form-input" %>
     </div>
 
-    <div class="field form-div">
+    <div class="field form-div m-3">
       <%= form.label :amount, id: "Amount", style: "display: block" %>
       <%= form.text_field :amount, type: :number, class: "form-input" %>
     </div>
 
-    <div class="field form-div">
+    <div class="field form-div m-3">
       <%= form.select :category_id, options_for_select([['Select a category', '']] + Category.all.map { |c| [c.name, c.id] }), {}, { class: "form-input" } %>
     </div>
   </div>

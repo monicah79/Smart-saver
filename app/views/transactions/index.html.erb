@@ -1,19 +1,28 @@
-<nav class="header">
-   <h2>SMART SAVER</h2>
-  <div>
-    <p> TRANSACTIONS </p>
-  </div>
-  <div>
-    <%= link_to "Back", categories_path, class: "back" %>
-  </div>
-</nav>
+<nav class="bg-primary text-white d-flex justify-content-between p-4 mt-0  text-center">
+      
+      <div>
+       <%= link_to categories_path, class: "text-white fs-4 " do %>
+        <i class="fa fa-angle-left" aria-hidden="true"></i>
+      <% end %>
+     </div>
+     
+      <div>
+        <p class: "text-white fs-3 fw-bold "> TRANSACTIONS  </p>
+      </div>
+     
+      <div>
+       <%= link_to root_path, class: "text-white fs-4 " do %>
+        <i class="fa fa-search" aria-hidden="true"></i>
+      <% end %>
+     </div>
+  </nav>
 
 <p style="color: green"><%= notice %></p>
 
 <div class="container">
 <div id="transactions">
   <% if @transactions.empty? %>
-    <div class="message">There are no transactions to display. Add one.</div>
+    <div class="message ">There are no transactions to display. Add one.</div>
   <% else %>
     <% @transactions.each do |transaction| %>
       <%= render transaction %>
@@ -21,14 +30,11 @@
   <% end %>
 </div>
 
-<div class="total bg-info text-white">
+<div class="total bg-info text-white d-flex justify-content-between p-4">
   <h5>Total Amount:</h5>
   <p>$<%= @total %></p>
 </div>
 
-<div class="mb-4">
-  <%= link_to "New transaction", new_transaction_path, class: "btn btn-secondary" %>
-</div>
 
 <div>
   <%= link_to "Show this transaction", @transaction %>
@@ -37,7 +43,7 @@
 
 <footer>
 <div class="actions">
- <%= link_to "Back to transactions", transactions_path %>
+<%= link_to "New transaction", new_transaction_path, class: "btn btn-secondary" %>
  </div>
  </footer>
 

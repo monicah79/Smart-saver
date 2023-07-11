@@ -11,6 +11,12 @@
     </div>
   <% end %>
 
+  <div class="field">
+    <%= form.label :icon %>
+    <%= form.file_field :icon %>
+  </div>
+  <%= form.submit %>
+
   <div>
     <%= form.label :name, style: "display: block" %>
     <%= form.text_field :name %>
