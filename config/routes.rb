@@ -3,7 +3,7 @@ Rails.application.routes.draw do
    devise_for :users
   #  resources :user
    get '/users/:id', to: 'users#show', as: 'user'
-  #  resources :users
+   resources :users
    resources :categories
    resources :transactions
    
