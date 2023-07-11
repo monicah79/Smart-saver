@@ -1,4 +1,4 @@
-/* .fa-bars::before {
+.fa-bars::before {
   content: "\f0c9";
   font-family: FontAwesome, sans-serif;
   font-style: normal;
@@ -80,4 +80,4 @@ img {
   width: 80%;
   border: 1px solid red;
   border-radius: 8px;
-} */
+}
