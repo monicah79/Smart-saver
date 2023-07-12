@@ -77,6 +77,12 @@ img {
 .form-input {
   padding: 20px;
   width: 80%;
-  border: 1px solid red;
+  border: 1px solid lightgray;
   border-radius: 8px;
+}
+
+.log-in {
+  width: 20%;
+  margin: 20px;
+  background: blue;
 }

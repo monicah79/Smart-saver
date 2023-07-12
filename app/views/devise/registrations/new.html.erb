@@ -18,25 +18,34 @@
   <div class="container">
     <div class="field form-div m-3 ">
       <% f.label :email %>
-      <%= f.email_field :email, id: "Email", autofocus: true, autocomplete: "email", required: true, placeholder: "Email", class: "form-input" %>
+      <%= f.email_field :email, id: "Email", autofocus: true, autocomplete: "email", required: true, placeholder: "Email", class: "form-input border-secondary" %>
     </div>
 
     <div class="field form-div m-3 ">
       <% f.label :name %>
-      <%= f.text_field :name, id: "name", autofocus: true, autocomplete: "text", required: true, placeholder: "Name", class: "form-input" %>
+      <%= f.text_field :name, id: "name", autofocus: true, autocomplete: "text", required: true, placeholder: "Name", class: "form-input border-secondary" %>
     </div>
 
     <div class="field form-div m-3 ">
       <% f.label :password %>
-      <%= f.password_field :password, id: "Password", autocomplete: "new-password", placeholder: "password (6 character minimum)", class: "form-input" %>
+      <%= f.password_field :password, id: "Password", autocomplete: "new-password", placeholder: "password (6 character minimum)", class: "form-input border-secondary" %>
     </div>
 
     <div class="field form-div m-3 ">
       <% f.label :password_confirmation %>
-      <%= f.password_field :password_confirmation, id: "Password_confirmation", autocomplete: "new-password", placeholder: "Password Confirmation", class: "form-input" %>
+      <%= f.password_field :password_confirmation, id: "Password_confirmation", autocomplete: "new-password", placeholder: "Password Confirmation", class: "form-input border-secondary" %>
     </div>
   </div>
 
+  <% if devise_mapping.rememberable? %>
+  <div class="field m-4">
+    <%= f.check_box :remember_me %>
+    <%= f.label :if_already_have_account %>
+  </div>
+<% end %>
 
+<div class="log-in m-4">
+  <%= f.submit "Log in" %>
+</div>
 
 <% end %>

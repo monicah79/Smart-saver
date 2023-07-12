@@ -20,6 +20,12 @@
 <p style="color: green"><%= notice %></p>
 
 <div class="container">
+
+<div class="total bg-info text-white d-flex justify-content-between p-4">
+  <h5>Total Amount:</h5>
+  <p>$<%= @total %></p>
+</div>
+
 <div id="transactions">
   <% if @transactions.empty? %>
     <div class="message ">There are no transactions to display. Add one.</div>
@@ -30,20 +36,14 @@
   <% end %>
 </div>
 
-<div class="total bg-info text-white d-flex justify-content-between p-4">
-  <h5>Total Amount:</h5>
-  <p>$<%= @total %></p>
-</div>
-
-
 <div>
   <%= link_to "Show this transaction", @transaction %>
 </div>
 </div>
 
 <footer>
-<div class="actions">
-<%= link_to "New transaction", new_transaction_path, class: "btn btn-secondary" %>
+<div class="action">
+<%= link_to "New transaction", new_transaction_path, class: "btn btn-secondary fixed-bottom actions" %>
  </div>
  </footer>
 

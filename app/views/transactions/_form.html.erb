@@ -16,22 +16,22 @@
   <div class="sign-color container">
     <div class="field form-div m-3">
       <% form.label :name, id: "Name", style: "display: block" %>
-      <%= form.text_field :name, placeholder: "Name", class: "form-input" %>
+      <%= form.text_field :name, placeholder: "Name", class: "form-input border-secondary" %>
     </div>
 
     <div class="field form-div m-3">
       <%= form.label :amount, id: "Amount", style: "display: block" %>
-      <%= form.text_field :amount, type: :number, class: "form-input" %>
+      <%= form.text_field :amount, type: :number, class: "form-input border-secondary" %>
     </div>
 
     <div class="field form-div m-3">
-      <%= form.select :category_id, options_for_select([['Select a category', '']] + Category.all.map { |c| [c.name, c.id] }), {}, { class: "form-input" } %>
+      <%= form.select :category_id, options_for_select([['Select a category', '']] + Category.all.map { |c| [c.name, c.id] }), {}, { class: "form-input border-secondary" } %>
     </div>
   </div>
 
     <footer>
-    <div class="actions">
-      <%= form.submit "Save", class: "save-btn" %>
+    <div class="action">
+      <%= form.submit "Save", class: "save-btn btn btn-secondary fixed-bottom actions" %>
     </div>
   </footer>
   
