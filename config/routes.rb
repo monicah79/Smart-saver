@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   root "splash#index"
    devise_for :users
-   resources :user
+  #  resources :user
+   get '/users/:id', to: 'users#show', as: 'user'
+   resources :users
    resources :categories
    resources :transactions
    

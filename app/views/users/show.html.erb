@@ -2,9 +2,9 @@
 
 <%= render @user %>
 
-<div>
-  <%= link_to "Edit this user", edit_user_path(@user) %> |
-  <%= link_to "Back to users", users_path %>
+<div class="d-flex flex-column ">
+  <%= link_to "Edit this user", edit_user_registration_path %> 
+  <%= link_to "Show list of users logged in", user_registration_path, class:"mt-5 justify-content-center text-decoration-none " %>
 
-  <%= button_to "Destroy this user", @user, method: :delete %>
+  <%= link_to "Sign out", destroy_user_session_path, class: " btn btn-primary mt-0 p-3 w-40 "  %>
 </div>

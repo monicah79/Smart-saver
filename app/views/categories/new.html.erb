@@ -1,14 +1,17 @@
 
+<nav class="bg-primary text-white d-flex justify-content-between p-4 mt-0  text-center">
+     <div>
+        <p> NEW CATEGORY </p>
+     </div>
+      <div>
+        <p class: "text-white fs-3 fw-bold "> NEW CATEGORY</p>
+      </div>
 
-<nav class="header">
-<h2>SMART SAVER</h2>
-  <div>
-    <p> NEW CATEGORY </p>
+      <div>
+    <%= link_to "Back", categories_path, class: "text-white fs-4 text-decoration-none" %>
   </div>
-  <div>
-    <%= link_to "Back", categories_path, class: "back" %>
-  </div>
-</nav>
+     
+  </nav>
 
 <div class="input-group">
   <%= link_to categories_path, class: "back-link" do %>

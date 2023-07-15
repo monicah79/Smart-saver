@@ -17,7 +17,6 @@ class CategoriesController < ApplicationController
 
   def create
     @category = Category.new(category_params)
-    # @category = current_user
     @category = current_user.categories.build(category_params)
 
     @category.user_id = current_user.id

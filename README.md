@@ -41,11 +41,11 @@ SmartSaver is a web-based budgeting application built using Ruby on Rails and Po
 
 ### 🚀 Live Demo <a name="live-demo"></a>
 
-- [BudgetApp]()
+- [BudgetApp](https://smart-saver-8jc8.onrender.com)
 
 ### 📽️ Video Presentation <a name="video"></a>
 
-[Video Presentation ] (https://www.loom.com/share/5d571397947b49f0a677c66a047801e0?sid=14c5b6cf-58cf-45bb-bf08-e4a63cb61bbb)-Powered by Loom
+[Video Presentation ] (https://www.loom.com/share/bcff94c5e73c473c8740b63e713da47b?sid=0c3c401b-c183-4cc3-8548-6b88addfff2f)-Powered by Loom
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -123,7 +123,7 @@ rails server
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/monicah79/Budget-App/issues).
+Feel free to check the [issues page](https://github.com/monicah79/Smart-saver/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
